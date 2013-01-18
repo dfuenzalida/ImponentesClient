@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<sobre xmlns="http://valida.aem.gob.cl">
+			<encabezado>
+				<idSobre>123456789</idSobre>
+				<fechaHora>2010-11-08T14:14:26.957Z</fechaHora>
+				<proveedor>
+					<nombre>DIPRECA</nombre>
+					<servicios>
+						<servicio>IMPONENTES DIPRECA</servicio>
+						<respuestaServicio>
+							<estado>SI</estado>
+							<glosa>RESPUESTA EXITOSA</glosa>
+						</respuestaServicio>
+					</servicios>
+				</proveedor>
+				<consumidor>
+					<nombre>IPS</nombre>
+					<tramite>SISTEMA PENSION SOLIDARIA</tramite>
+					<certificado>
+						<ns1:X509Data xmlns:ns1="http://www.w3.org/2000/09/xmldsig#">
+							<ns1:X509IssuerSerial>
+								<ns1:X509IssuerName>IN</ns1:X509IssuerName>
+								<ns1:X509SerialNumber>0</ns1:X509SerialNumber>
+							</ns1:X509IssuerSerial>
+						</ns1:X509Data>
+					</certificado>
+				</consumidor>
+				<fechaHoraReq>2010-11-08T14:14:26.957Z</fechaHoraReq>
+				<emisor>DIPRECA</emisor>
+				<metadataOperacional>
+					<estadoSobre>00</estadoSobre>
+					<glosaSobre>TRANSACCION EXITOSA</glosaSobre>
+				</metadataOperacional>
+			</encabezado>
+			<cuerpo>
+				<documento>
+					<ns2:DatosImponente xmlns:ns2="http://servicios.dipreca.cl/ipsV01">
+						<ns2:MensajeWebServices>R.U.T. VIGENTE EN DIPRECA
+						</ns2:MensajeWebServices>
+						<ns2:FechaInforme>2010-11-08</ns2:FechaInforme>
+						<ns2:Run>
+							<numero>4895102</numero>
+							<dv>3</dv>
+						</ns2:Run>
+						<ns2:NombreCompletoBeneficiario>
+							<Nombres>EUFRASIO</Nombres>
+							<ApellidoPaterno>MEDINA</ApellidoPaterno>
+							<ApellidoMaterno>CARRASCO</ApellidoMaterno>
+						</ns2:NombreCompletoBeneficiario>
+						<ns2:FechaNacimiento>1942-07-01</ns2:FechaNacimiento>
+						<ns2:Sexo>M</ns2:Sexo>
+						<ns2:SituacionIndividuo>P</ns2:SituacionIndividuo>
+						<ns2:FechaPension>1993-08-01</ns2:FechaPension>
+						<ns2:TipoPension>T</ns2:TipoPension>
+					</ns2:DatosImponente>
+				</documento>
+			</cuerpo>
+		</sobre>
+	</soapenv:Body>
+</soapenv:Envelope>
